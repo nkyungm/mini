@@ -67,7 +67,8 @@
 
 ## 📝조건문 실행, 함수 + 실습
  
-### 1. 조건문(if else)
+### 1. 조건문 실행
+##### <h4> 1-1 조건문(if else)
  - 비교 연산자
  
 | 연산자 | 의미 |    
@@ -78,6 +79,88 @@
 | <= | x가 y보다 작거나 같을 때 True, 그 외에는 False |
 | == | x와 y가 같을 때 True, 그 외에는 False |
 | != | x와 y가 다를 때 True, 그 외에는 False |
+
+- 단일 if문
+``` PYTHON
+x=5
+if x<10:
+    print("Smaller")
+ ```
+ - if else문
+``` PYTHON
+x=11
+if x<10:
+   print("Smaller")
+else:
+   print("Bigger")
+ ```
+##### <h4> 1-1 조건문(elif)과 예외처리(try,except)
+ - 다중 분기(if-elif-else)
+ ``` PYTHON
+x=21
+if x<2:
+    print("Small")
+elif x<10:
+    print("Medium")
+else:
+    print("Big")
+ ```
+ - try / except
+``` PYTHON
+astr='Hello Bob'
+try:
+    istr=int(astr)
+except:
+    istr= -1
+print('First',istr)
+
+astr='123'
+try:
+    istr=int(astr)
+except:
+    istr= -1
+print('Second',istr)
+ ```
+          
+### 3. 조건문 실행 실습 
+ - 실습1
+           
+![image](https://user-images.githubusercontent.com/97418768/149085926-c3f0e237-fe93-42aa-8cbb-544f006332e8.png)
+``` PYTHON
+hours=input("Enter Hours: ")
+rate=input("Enter Rate: ")
+if(int(hours)>40):
+    pay=40*float(rate)+(float(hours)-40)*15
+else:
+    pay=float(hours)*float(rate)
+print("Pay: ",pay)
+ ```
+ 
+ - 실습2
+ 
+ ![image](https://user-images.githubusercontent.com/97418768/149086036-d0c86b2e-04f2-4512-bf7a-9cb5f808c289.png)
+``` PYTHON
+hours=input("Enter Hours: ")
+rate=input("Enter Rate: ")
+try:
+    hours_f=float(hours)
+    rate_f=float(rate)
+except:
+    print('Error, please enter numeric input')
+    quit()
+
+if(hours_f>40):
+    pay=40*rate_f+(hours_f-40)*15
+else:
+    pay=hours_f*rate_f
+print("Pay: ",pay)
+ ```
+### 4. 함수
+ - 함수는 반복적으로 호출해야하는 코드의 묶음을 하나의 블럭으로 만들어 이름을 붙여 재사용률을 높인 "코드의 묶음"
+ - 내장함수
+   ex) print(), input(), type(), float(), int()...
+ - 사용자 정의 함수
+ 
 
 - 단일 if문
 ``` PYTHON
@@ -121,10 +204,6 @@ except:
     istr= -1
 print('Second',istr)
  ```
-          
-### 3. 자료형 
- - 프로그래밍을 할 때 쓰이는 숫자, 문자열 등의 자료 형태로 사용하는 것들을 의미한다. 
- 
 </div>
 </details>
 
