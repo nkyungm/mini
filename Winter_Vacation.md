@@ -50,7 +50,7 @@
 | % | 나머지 |
 
 ### 6. 실습 
- ![image](https://user-images.githubusercontent.com/97418768/148963128-0dbfc46c-7390-44a3-a1e6-d29ccc3042e1.png)
+ ![image](https://user-images.githubusercontent.com/97418768/149092415-c7fb3715-5926-49dc-92e1-9b71bc20b130.png)
  ``` PYTHON
  hours=int(input('Enter Hours: '))
  rate=float(input('Enter Rate: '))
@@ -125,7 +125,7 @@ print('Second',istr)
 ##### <h4> 1-3 조건문 실행 실습           
  - 실습1
            
-![image](https://user-images.githubusercontent.com/97418768/149085926-c3f0e237-fe93-42aa-8cbb-544f006332e8.png)
+![image](https://user-images.githubusercontent.com/97418768/149092326-c2aba6d3-2520-4049-9ddd-4d4f0b971298.png)
 ``` PYTHON
 hours=input("Enter Hours: ")
 rate=input("Enter Rate: ")
@@ -138,7 +138,7 @@ print("Pay: ",pay)
  
  - 실습2
  
- ![image](https://user-images.githubusercontent.com/97418768/149086036-d0c86b2e-04f2-4512-bf7a-9cb5f808c289.png)
+ ![image](https://user-images.githubusercontent.com/97418768/149092345-b7e60e42-321f-4a32-92c2-33b0e6f1ab74.png)
 ``` PYTHON
 hours=input("Enter Hours: ")
 rate=input("Enter Rate: ")
@@ -187,33 +187,22 @@ def add(left,right):
  
 print(add(1,2))
  ```
-
-### 2. 조건문(elif)과 예외처리(try,except)
- - 다중 분기(if-elif-else)
- ``` PYTHON
-x=21
-if x<2:
-    print("Small")
-elif x<10:
-    print("Medium")
-else:
-    print("Big")
- ```
- - try / except
+##### <h4> 2-3 함수 실습
+![image](https://user-images.githubusercontent.com/97418768/149092101-fb90dd42-34d0-4d60-887f-67dc10f56e8b.png)
 ``` PYTHON
-astr='Hello Bob'
-try:
-    istr=int(astr)
-except:
-    istr= -1
-print('First',istr)
+def computepay(h,r):
+    if(h>40):
+        return 40*r+(h-40)*15
+    else:
+        return h*r
 
-astr='123'
-try:
-    istr=int(astr)
-except:
-    istr= -1
-print('Second',istr)
+hours=input('Enter Hour:')
+rate=input('Enter Rate:')
+
+hour_f=float(hours)
+rate_f=float(rate)
+
+print("Pay: ",computepay(hour_f,rate_f))
  ```
 </div>
 </details>
