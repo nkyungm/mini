@@ -94,7 +94,7 @@ if x<10:
 else:
    print("Bigger")
  ```
-##### <h4> 1-1 조건문(elif)과 예외처리(try,except)
+##### <h4> 1-2 조건문(elif)과 예외처리(try,except)
  - 다중 분기(if-elif-else)
  ``` PYTHON
 x=21
@@ -121,8 +121,8 @@ except:
     istr= -1
 print('Second',istr)
  ```
-          
-### 3. 조건문 실행 실습 
+ 
+##### <h4> 1-3 조건문 실행 실습           
  - 실습1
            
 ![image](https://user-images.githubusercontent.com/97418768/149085926-c3f0e237-fe93-42aa-8cbb-544f006332e8.png)
@@ -155,26 +155,37 @@ else:
     pay=hours_f*rate_f
 print("Pay: ",pay)
  ```
-### 4. 함수
+### 2. 함수
  - 함수는 반복적으로 호출해야하는 코드의 묶음을 하나의 블럭으로 만들어 이름을 붙여 재사용률을 높인 "코드의 묶음"
- - 내장함수
-   ex) print(), input(), type(), float(), int()...
- - 사용자 정의 함수
+##### <h4> 2-1 내장함수
+ ex) print(), input(), type(), float(), int()...
  
-
-- 단일 if문
+##### <h4> 2-2 사용자 정의함수
+ - 인자를 입력 받고, 계산을 하고, 결과를 반환하는 재사용 가능한 코드
+ - 함수를 정의할 때 def 예약어 이용
+ - 함수 이름, 괄호 그리고 인자를 이용해 함수 호출
+1. 인자(Argument)
+ - 인자란 함수를 호출할 때 전달하는 값
+2. 매개변수(Parameters)
+ - 함수가 정의된 곳에서 변수처럼 사용
 ``` PYTHON
-x=5
-if x<10:
-    print("Smaller")
+def greeting(lang):
+    print(lang)
+greeting("Hello Word")
  ```
- - if else문
+3. 반환값(Return Value)
 ``` PYTHON
-x=11
-if x<10:
-   print("Smaller")
-else:
-   print("Bigger")
+def greeting():
+    return "Hello"
+print(greeting(),"Connect")
+print(greeting(),"Python")
+ ```
+4. Multiple 매개변수 / 인자
+``` PYTHON
+def add(left,right):
+    return left+right
+ 
+print(add(1,2))
  ```
 
 ### 2. 조건문(elif)과 예외처리(try,except)
