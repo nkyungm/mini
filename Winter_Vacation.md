@@ -81,37 +81,50 @@
 
 - 단일 if문
 ``` PYTHON
- x=5
- if x<10:
-     print("Smaller")
+x=5
+if x<10:
+    print("Smaller")
  ```
  - if else문
 ``` PYTHON
- x=11
- if x<10:
-    print("Smaller")
+x=11
+if x<10:
+   print("Smaller")
 else:
-    print("Bigger")
+   print("Bigger")
  ```
 
 ### 2. 조건문(elif)과 예외처리(try,except)
- - 변하지 않거나 일정한 값을 가진 수와 양을 의마한다. 주로 Final 키워드를 사용하여 선언한다. 
- Ex) final double PI = 3.141592; // final로 double 데이터 타입 변수명 PI 를 3.141592로 상수선언을 하였다.
+ - 다중 분기(if-elif-else)
+ ``` PYTHON
+x=21
+if x<2:
+    print("Small")
+elif x<10:
+    print("Medium")
+else:
+    print("Big")
+ ```
+ - try / except
+``` PYTHON
+astr='Hello Bob'
+try:
+    istr=int(astr)
+except:
+    istr= -1
+print('First',istr)
+
+astr='123'
+try:
+    istr=int(astr)
+except:
+    istr= -1
+print('Second',istr)
+ ```
+          
 ### 3. 자료형 
  - 프로그래밍을 할 때 쓰이는 숫자, 문자열 등의 자료 형태로 사용하는 것들을 의미한다. 
- - 논리타입 : boolean (1바이트, True or False)
- - 문자타입 : char (2바이트)
- - 정수타입 : byte (1바이트), short (2바이트), int (4바이트), long(8바이트)
- - 실수타입 : float(4바이트), double(8바이트)
-### 4. 특수문자
-- 자바에서 출력문에서 특수문자가 나오는경우, 그 다음 문자를 인식해 상황에 맞게 처리하는 Escape Sequence를 통해 처리한다.    
  
-
-### 5. 백준문제 풀이 
- - 백준 단계1 입출력과 사칙연산 11문제 풀이 완료    
- 
- ![백준_기본](https://user-images.githubusercontent.com/42793489/148000764-9ba92dcf-48f3-4a84-abe1-2bd36a94d261.PNG)
-
 </div>
 </details>
 
