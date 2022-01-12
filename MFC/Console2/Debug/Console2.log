@@ -1,0 +1,6 @@
+﻿  Console2.cpp
+c:\users\skaru\documents\visual studio 2015\projects\console2\console2.cpp(154): warning C4477: 'wprintf' : 서식 문자열 '%s'에 'wchar_t *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'CString'입니다.
+c:\users\skaru\documents\visual studio 2015\projects\console2\console2.cpp(162): warning C4477: 'wprintf' : 서식 문자열 '%s'에 'wchar_t *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'CString'입니다.
+c:\users\skaru\documents\visual studio 2015\projects\console2\console2.cpp(176): warning C4477: 'wprintf' : 서식 문자열 '%s'에 'wchar_t *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'CString'입니다.
+  Console2.vcxproj -> c:\users\skaru\documents\visual studio 2015\Projects\Console2\Debug\Console2.exe
+  Console2.vcxproj -> c:\users\skaru\documents\visual studio 2015\Projects\Console2\Debug\Console2.pdb (Full PDB)
