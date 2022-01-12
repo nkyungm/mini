@@ -94,7 +94,7 @@ else:
     print("Bigger")
  ```
 
-### 2. 상수
+### 2. 조건문(elif)과 예외처리(try,except)
  - 변하지 않거나 일정한 값을 가진 수와 양을 의마한다. 주로 Final 키워드를 사용하여 선언한다. 
  Ex) final double PI = 3.141592; // final로 double 데이터 타입 변수명 PI 를 3.141592로 상수선언을 하였다.
 ### 3. 자료형 
