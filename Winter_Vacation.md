@@ -395,7 +395,7 @@ print("Pay: ",computepay(hour_f,rate_f))
  # 📌[Information Security & Web Hacking]
  <details>
 
-<summary> 1주차 </summary>
+<summary> 0 </summary>
 <div markdown="1">
  
 ## 📝 실습을 위한 환경 구축, 웹 해킹 입문 전 기본적인 지식
@@ -449,7 +449,9 @@ print("Pay: ",computepay(hour_f,rate_f))
 </div>
 </details>
 
-<summary> 1주차 </summary>
+<details>
+
+<summary> 2주차 </summary>
 <div markdown="1">
  
 ## 📝 실습을 위한 환경 구축, 웹 해킹 입문 전 기본적인 지식
