@@ -395,7 +395,7 @@ print("Pay: ",computepay(hour_f,rate_f))
  # 📌[Information Security & Web Hacking]
  <details>
 
-<summary> 0 </summary>
+<summary> 0강 - 실습을 위한 환경 구축, 웹 해킹 입문 전 기본적인 지식 </summary>
 <div markdown="1">
  
 ## 📝 실습을 위한 환경 구축, 웹 해킹 입문 전 기본적인 지식
@@ -451,10 +451,10 @@ print("Pay: ",computepay(hour_f,rate_f))
 
 <details>
 
-<summary> 2주차 </summary>
+<summary> 1강 - 웹 해킹 입문 전 기본적인 지식 </summary>
 <div markdown="1">
  
-## 📝 실습을 위한 환경 구축, 웹 해킹 입문 전 기본적인 지식
+## 📝 웹 해킹 입문 전 기본적인 지식
  
 ### 1. 설치
  https://tomatohj.tistory.com/12?category=873511
