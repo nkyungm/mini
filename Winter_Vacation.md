@@ -232,8 +232,13 @@ print("Pay: ",computepay(hour_f,rate_f))
  - 루프(반복 단계)는 각 루프마다 변하는 반복 변수를 가지고 있음
  - 종종 반복 변수는 연속된 숫자를 차례대로 받음
  
+ ### 2. for 루프
+
+ ### 3. 반복문
  
-  ### 2. 백준 for문 문제풀이
+ ### 4. 반복문 응용
+ 
+ ### 5. 실습
  
  ![백준_for문](https://user-images.githubusercontent.com/42793489/148317500-8c39860d-2a55-4042-85b5-ea51ab1856c5.PNG)
 
