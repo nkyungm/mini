@@ -534,8 +534,23 @@ print("Pay: ",computepay(hour_f,rate_f))
  - 필요한 소프트웨어 설치, 서버사이드 언어로 개발
  
  ##### <h4> 5-3
- - Web Server : 사용자의 요청을 받고, 응답해주는 역할 ex) Apache, Nginx 
- - 서버사이드 언어 : 실질적인 기능을 수행하는 언어 ex) PHP, JSP, ASP 등
- - 서버사이드 언어 해석기 : 서버사이드 언어를 해석하여 실행함
+ 1. Web Server : 사용자의 요청을 받고, 응답해주는 역할 ex) Apache, Nginx 
+ 2. 서버사이드 언어 : 실질적인 기능을 수행하는 언어 ex) PHP, JSP, ASP 등
+ 3. 서버사이드 언어 해석기 : 서버사이드 언어를 해석하여 실행함
+ - Web Server에 모듈 형태로 설치 ex)PHP
+ - 전용 WAS 설치 ex)JSP
+ 4. WAS(Web Application Server) : 기존 Web Server의 기능에 서버사이드 언어에 대한 해석 기능이 추가된 소프트 웨어
+ - ex) Tomcat, JBoss Jeus 등
+ 5. DataBase : 저장된 데이터의 집합체, DBMS라는 소프트웨어를 통해 데이터를 추가, 삭제, 수정하며 관리함
+ 6. DBMS(DataBase Management System) : DataBase를 관리하는 소프트웨어
+ - ex) MySQL, Oracle, MSSQL 등
+ 
+ ##### <h4> 5-4 웹 서비스를 위해 필요한 것
+ 1. 클라이언트 사이드 언어로 개발/프로그래밍
+ 2. Web Server 설치
+ 3. 서버 사이드 언어로 개발/프로그래밍
+ 4. 모듈 형태의 해석기 또는 WAS 설치
+ 5. DBMS 설치
+ 
  </div>
 </details>
