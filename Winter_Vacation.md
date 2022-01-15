@@ -418,9 +418,15 @@ print("Pay: ",computepay(hour_f,rate_f))
  
 ## 📝 웹 해킹 입문 전 기본적인 지식
  
-### 1. 설치
- https://tomatohj.tistory.com/12?category=873511
+### 1. OS와 네트워크란?
+ - 소프트웨어 : 컴퓨터 프로그램 및 그와 관련된 문서들을 통틀어 이르는 말
+ - 하드웨어 : 컴퓨터를 구성하는 기계 장치의 몸체를 통틀어 이르는 말
+##### <h4> 1-1 OS
+ - Operating System의 줄임말, 운영체제
+ - 컴퓨터를 사용하기 위한 가장 기본적인 소프트웨어
  
+ ![image](https://user-images.githubusercontent.com/97418768/149619675-65e3fcf3-c770-4c66-be7d-095a4d597981.png)
+
 ### 2. 기본적인 지식
 ##### <h4> 2-1 보안
  - 안전을 유지함
