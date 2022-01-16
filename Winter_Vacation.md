@@ -240,110 +240,18 @@ print("Pay: ",computepay(hour_f,rate_f))
  
  ### 5. 실습
  
- ![백준_for문](https://user-images.githubusercontent.com/42793489/148317500-8c39860d-2a55-4042-85b5-ea51ab1856c5.PNG)
 
  </div>
 </details>
  
 <details>
-<summary> 2022.1.15(SAT)</summary>
-<div markdown="1">  
- 
- ## 📝객체지향 프로그래밍, 클래스와 인스턴스 개념 알아보고 실습하기
- ### 1. 객체지향 프로그래밍 
- - C언어처럼 실행하고자 하는 절차를 정하고, 절차대로 프로그래밍 하는 방법을 절차지향 프로그래밍이라고 한다. 그러나. 현실에서는 단순히 일련의 행위가 아니라 각 물체 간의 관계, 상호작용 등 훨씬 복잡하게 구성되어 있다.
- - 객체 지향 프로그래밍은 절차 지향 프로그래밍의 이러한 단점을 극복하고 물체를 객체로 표현하고, 관계, 상호 작용을 프로그램으로 나타낸다.
- - 자판기를 객체 지향 프로그램으로 구현하면, 관련 물체들을 객체로 추출하고, 이들의 상호작용에 필요한 함수(메소드)와 변수(필드)를 설계를 및 구현한다.
- 
- ### 2. 클래스와 인스턴스
- - 클래스는 객체를 만들어 내기 위한 설계 혹은 틀이다.
- - 클래스에 선언된 모양 그대로 생성된 실체가 객체이다. 이러한 연유로 객체를 클래스의 인스턴스라고도 부른다.
- - 하나의 클래스에 여러개의 객체들이 생성될수 있다. 각 객체들은 동일한 속성을 가지고 있지만, 자신만의 고유한 값을 가짐으로 구분된다. 
- 
- ### 3. 실습
- 
- <details>
-
-<summary> 백준문제 1712번 손익분기점 계산 문제 class 를 이용해서 풀이</summary>
-<div markdown="2">
- 
- - 소스코드
- 
- ![백준_손익분기점_클래스사용_code](https://user-images.githubusercontent.com/42793489/148509965-4e62239e-30f5-4e68-a779-d803c1ef13a8.PNG)
-
- - 문제풀이 결과 
- 
- ![백준_손익분기점_클래스사용](https://user-images.githubusercontent.com/42793489/148510001-6c265268-b73e-44ee-b1d1-a96346804a60.PNG)
- </div>
-</details>
- 
- <details>
-
-<summary> 백준문제 2292번 벌집 문제 class 를 이용해서 풀이</summary>
-<div markdown="2">
- 
- - 소스코드
- 
-![백준_벌집_code](https://user-images.githubusercontent.com/42793489/148516881-8c9ee82a-d531-47c7-8a88-56766f85672b.PNG)
-
-
- - 문제풀이 결과 
- 
- ![백준_벌집](https://user-images.githubusercontent.com/42793489/148516904-5ace6ae7-b6e2-4b3c-b5f2-a2c7682bc602.PNG)
-
-
- </div>
-</details>
-
- </div>
-</details>
- 
- 
-  
-<details>
-
 <summary> 2022.1.16(SUN) </summary>
 <div markdown="1">
  
- ## 📝 상속 / 캡슐화 / 다형성
- 
- ### 1. 상속
- - 자식 클래스가 부모 클래스의 기능을 그대로 물려 받을 수 있는 것이 상속이다.
- - 부모 클래스의 private 접근 제한을 갖는 필드 및 메소드는 자식이 물려받을수 없다.
- - 상속 받고자 하는 자식 클래스 옆에 extends 키워드를 붙이고, 상속할 부모 클래스를 작성한다.
- ``` JAVA
- public class parent {};
- public class Child extends parent {}:
- ```
- 
- - 상속할 부모는 오직 1명 뿐이다. 다음은 동작하지 않는 코드이다.
- ``` JAVA
- public class parent {};
- public class parent2 {};
- public class Child extends parent, parent2 {}:
- ```
- 
- ### 2. 캡슐화
- - 변수와 함수를 하나의 클래스로 묶고 외부에서 쉽게 접근하지 못하도록 하는것 은닉화가 핵심이다. 
- - 외부에서 객체 접근하는데 있어서 정보를 숨기고 객체의 연산을 통해서만 접근가능하게 하는것이다. 
- - 외부에서 특정 객체의 데이터 및 함수를 직접 접근을 막음으로써 변경을 못하게 하고 시스템 확장시 오류를 최소화 할 수 있다는 점에서 은닉화는 장점이 된다. 
- - 캡슐화를 위한 접근 제어자
-  ``` JAVA
- public class parent1 {
-     private int val1; // 동일한 클래스안에서만 접근이 가능하고, 외부에서는 접근이 불가능하다.
- }; // 다른패키지에서 인스턴스(객체) 생성가능하다.
- private class parent2 {}; //동일한 클래스안에서만 접근이 가능하고,  상속은 안된다.
- protected class parent3 {}; //동일한 패키지 안에서 사용가능하고, 다른 외부 패키지라도 상속받은 클래스에는 접근 가능 
- ```
- ### 3. 다형성 
- - 하나의 객체가 여러 타입을 가질수있는 특징을 다형성이라고한다.
- - JAVA 에서 다형성은 부모 클래스 타입의 참조 변수로 자식 클래스 타입의 인스턴스를 참조할 수 있도록 구현되고 있다.
- - JAVA 에서 부모클래스는 다중상속을 지원하지 않지만, 인터페이스는 더 추상적이기때문에 여러 인터페이스를 상속받는 다중 상속을 지원한다.
- ``` JAVA
- public class child {};
- public class parent {};
- public class child extends parent implements parents1, parents2 {}: // child 객체는 parents 클래스의 객체이면서, parents1, parents2 인터페이스의 객체이기도 하다. 
- ```
+ ## 📝 백준문제 풀이    
+ ### 1. 백준 for문 문제풀이
+![image](https://user-images.githubusercontent.com/97418768/149661370-932a61a2-01cf-4eba-846e-eb52aaee835b.png)
+
 </div>
 </details>
 
