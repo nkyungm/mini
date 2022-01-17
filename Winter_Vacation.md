@@ -258,6 +258,23 @@ print("Pay: ",computepay(hour_f,rate_f))
  </div>
 </details>
  
+ <details>
+<summary> 2022.1.17(MON) </summary>
+<div markdown="1">
+ 
+ ## 📝 백준문제 풀이    
+ ### 1. 백준 while문 문제풀이
+![image](https://user-images.githubusercontent.com/97418768/149787887-247966ec-0bbc-431a-8127-bbb2d9c0afc3.png)
+ 
+ ### 1. 백준 1차원배열 문제풀이
+![image](https://user-images.githubusercontent.com/97418768/149787987-a0fb3748-6b6a-455d-bcf2-145d85b57e29.png)
+
+</div>
+</details>
+
+ </div>
+</details>
+ 
  # 📌[MFC]
 
  # 📌[BlockChain]
