@@ -274,6 +274,32 @@ print("Pay: ",computepay(hour_f,rate_f))
 
  </div>
 </details>
+  <details>
+<summary> 2022.1.18(TUE) </summary>
+<div markdown="1">
+ 
+ ## 📝 Coding Test 파이썬 문제풀이(1~30)   
+![image](https://user-images.githubusercontent.com/97418768/150154390-0aa50962-ae3d-4416-bb2a-6b00fdf17804.png)
+![image](https://user-images.githubusercontent.com/97418768/150154496-5fe644b8-f119-421d-8536-35c3539d59da.png)
+
+</div>
+</details>
+
+ </div>
+</details>
+<details>
+<summary> 2022.1.19(WED) </summary>
+<div markdown="1">
+ 
+ ## 📝 Coding Test 파이썬 문제풀이(31~60)   
+![image](https://user-images.githubusercontent.com/97418768/150154798-12c9890c-66ab-4d8e-995b-1b4d08b54f70.png)
+![image](https://user-images.githubusercontent.com/97418768/150154862-bda414c1-2b7d-445b-b1d1-7df58efd2b2d.png)
+
+</div>
+</details>
+
+ </div>
+</details>
  
  # 📌[MFC]
 
