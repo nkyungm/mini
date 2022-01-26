@@ -1,0 +1,13 @@
+a,b=map(str,input().split())
+a_1=int(a[0])
+a_2=int(a[1])
+a_3=int(a[2])
+aa=a_3*100+a_2*10+a_1
+b_1=int(b[0])
+b_2=int(b[1])
+b_3=int(b[2])
+bb=b_3*100+b_2*10+b_1
+if(aa>bb):
+    print(aa)
+else:
+    print(bb)
