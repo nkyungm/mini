@@ -327,6 +327,74 @@ print("Pay: ",computepay(hour_f,rate_f))
  </div>
 </details>
 
+<details>
+<summary> 2022.1.21(FRI) </summary>
+<div markdown="1">
+ 
+ ## 📝 Coding Test 파이썬 문제풀이(61~80)   
+ ![image](https://user-images.githubusercontent.com/97418768/151354024-8c16462f-4608-4c48-bc6d-91fbf5045fb8.png)
+
+</div>
+</details>
+
+ </div>
+</details>
+
+<details>
+<summary> 2022.1.24(MON) </summary>
+<div markdown="1">
+ 
+ ## 📝 Coding Test 파이썬 문제풀이(81~98)   
+ ![image](https://user-images.githubusercontent.com/97418768/151354216-4fb77110-f5e5-435a-abcd-1555101911c9.png)
+
+</div>
+</details>
+
+ </div>
+</details>
+
+<details>
+<summary> 2022.1.25(TUE) </summary>
+<div markdown="1">
+ 
+## 📝 백준문제 풀이    
+ ### 1. 백준 함수 문제풀이
+![image](https://user-images.githubusercontent.com/97418768/151354704-9e2d1d75-ee96-4c5c-9dd7-e49f4ca261ae.png)
+
+</div>
+</details>
+
+ </div>
+</details>
+
+<details>
+<summary> 2022.1.26(WED) </summary>
+<div markdown="1">
+ 
+## 📝 백준문제 풀이    
+ ### 1. 백준 문자열 문제풀이(1~5)
+![image](https://user-images.githubusercontent.com/97418768/151354862-ad2a1d05-b248-49ec-b8d6-6e264944d6fc.png)
+
+</div>
+</details>
+
+ </div>
+</details>
+
+<details>
+<summary> 2022.1.27(THU) </summary>
+<div markdown="1">
+ 
+## 📝 백준문제 풀이    
+ ### 1. 백준 문자열 문제풀이(6~10)
+![image](https://user-images.githubusercontent.com/97418768/151354983-50339cd8-c404-4ff8-a445-40bfdcf0b7aa.png)
+
+</div>
+</details>
+
+ </div>
+</details>
+
  # 📌[MFC]
 
  # 📌[BlockChain]
