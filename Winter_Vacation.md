@@ -395,6 +395,20 @@ print("Pay: ",computepay(hour_f,rate_f))
  </div>
 </details>
 
+<details>
+<summary> 2022.1.28(FRI) </summary>
+<div markdown="1">
+ 
+## 📝 백준문제 풀이    
+ ### 1. 백준 기본 수학 1 문제풀이(1~4)
+![image](https://user-images.githubusercontent.com/97418768/151533199-bcd4e5cc-9522-40e4-81d2-09ac889ca264.png)
+
+</div>
+</details>
+
+ </div>
+</details>
+
  # 📌[MFC]
 
  # 📌[BlockChain]
