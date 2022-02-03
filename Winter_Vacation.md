@@ -409,6 +409,64 @@ print("Pay: ",computepay(hour_f,rate_f))
  </div>
 </details>
 
+<details>
+<summary> 2022.1.31(MON) </summary>
+<div markdown="1">
+ 
+## 📝 백준문제 풀이    
+ ### 1. 백준 기본 수학 1 문제풀이(5)
+![image](https://user-images.githubusercontent.com/97418768/152357667-c8e8451a-22db-4c30-be2c-3e6b8ffbbb47.png)
+
+ ### 2. 백준 재귀 문제풀이(1,2)
+![image](https://user-images.githubusercontent.com/97418768/152357776-328d3005-8a5f-4f1c-aa49-7b0ca60d9763.png)
+
+</div>
+</details>
+
+ </div>
+</details>
+
+<details>
+<summary> 2022.2.1(TUE) </summary>
+<div markdown="1">
+ 
+## 📝 백준문제 풀이    
+ ### 1. 백준 기본 수학 2 문제풀이(1~3)
+![image](https://user-images.githubusercontent.com/97418768/152357991-361c04e2-179a-4e11-b5d4-74b917131273.png)
+
+</div>
+</details>
+
+ </div>
+</details>
+
+<details>
+<summary> 2022.2.2(WED) </summary>
+<div markdown="1">
+ 
+## 📝 백준문제 풀이    
+ ### 1. 백준 기본 수학 2 문제풀이(4~5,7)
+![image](https://user-images.githubusercontent.com/97418768/152358086-525cd563-4be8-4c4f-9985-547ef2db081c.png)
+![image](https://user-images.githubusercontent.com/97418768/152358128-95587ea3-a8df-4ddf-b838-6a798b97bf70.png)
+</div>
+</details>
+
+ </div>
+</details>
+
+<details>
+<summary> 2022.2.3(THU) </summary>
+<div markdown="1">
+ 
+## 📝 백준문제 풀이    
+ ### 1. 백준 기본 수학 2 문제풀이(8~10)
+![image](https://user-images.githubusercontent.com/97418768/152358239-8e8003f0-0a70-4b73-9be2-97e052af8be7.png)
+</div>
+</details>
+
+ </div>
+</details>
+
  # 📌[MFC]
 
  # 📌[BlockChain]
