@@ -1,0 +1,6 @@
+﻿  Lab_7View.cpp
+c:\users\skaru\documents\visual studio 2015\projects\lab_7\lab_7view.cpp(132): warning C4060: switch문에 'case' 또는 'default' 레이블이 없습니다.
+c:\users\skaru\documents\visual studio 2015\projects\lab_7\lab_7view.cpp(116): warning C4102: 'case1': 참조되지 않은 레이블입니다.
+c:\users\skaru\documents\visual studio 2015\projects\lab_7\lab_7view.cpp(124): warning C4102: 'case2': 참조되지 않은 레이블입니다.
+Lab_7.obj : error LNK2001: "public: void __thiscall CAboutDlg::OnLButtonDown(unsigned int,class CPoint)" (?OnLButtonDown@CAboutDlg@@QAEXIVCPoint@@@Z) 외부 기호를 확인할 수 없습니다.
+C:\Users\skaru\Documents\Visual Studio 2015\Projects\Lab_7\Debug\Lab_7.exe : fatal error LNK1120: 1개의 확인할 수 없는 외부 참조입니다.
