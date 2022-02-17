@@ -467,9 +467,34 @@ print("Pay: ",computepay(hour_f,rate_f))
  </div>
 </details>
 
- # 📌[MFC]
-
  # 📌[BlockChain]
+ 
+ <details>
+
+<summary>Beginning Ethereum Smart Contracts Programming
+- With Examples in Python, Solidity, and JavaScript</summary>
+<div markdown="1">
+ 
+## 📝 Connecting to the Ethereum Blockchain, Creating Your Own Private Ethereum Test Network
+### 1. node1 geth실행 : geth --datadir C:\Users\NGM\MyTestNet\node1 console --networkid 4649 --nodiscover --maxpeers 0 (or) geth --datadir C:\Users\NGM\MyTestNet\node1 console 2>console1.log
+### 2. 외부 계정주소 생성 : personal.newAccount() (비밀번호 : pass0)
+### 3. 외부 계정주소 확인 : eth.accounts
+### 4. 코인베이스계정주소확인 : eth.coinbase
+### 5. 코인베이스 잔액 조회 : eth.getBalance(eth.accounts[0])
+### 6. 단위 변경(wei -> ether) : web3.fromWei(eth.getBalance(eth.accounts[0]),"ether") => 채굴 보상 = 생성 블록 수 * 5 ETH
+### 7. 종료 : exit
+### 8. node2 geth실행 : geth --datadir C:\Users\NGM\MyTestNet\node2 console --networkid 4649 --nodiscover --maxpeers 0 (or) geth --datadir C:\Users\NGM\MyTestNet\node2 --port 30304 --nodiscover --networkid 2345 console 2>console2.log => geth --networkid 2345 --datadir C:\Users\NGM\MyTestNet\node2 --port 30304 console 2>> C:\Users\NGM\MyTestNet\node2\geth.log 이거로 geth 들어가야함
+
+### 9. node1 geth 실행(node2와 동시 접속) : geth --datadir C:\Users\NGM\MyTestNet\node1 --networkid 2345 --ipcdisable console 2>console1.log
+### 10. admin.nodeInfo
+### 11. enode 명령어 : admin.nodeInfo.enode
+### 12. node1의 enode : "enode://26c316e90df9254a5da1dc934df9e860c959c89f0176cfd2a88940eeceae5e6d0e3ebaec2ca67bb325aeb6133ecbf82dab3b0a2125da6662d86f3e894f76512e@165.229.125.27:30303", node2의 enode : "enode://d2facada76b143b2eda531fc0e08a104d71284f70ddc8c28cacade3d06516265f7f33874d67706d47e77ba2fec5e70eb9285abcea0303041cbe23f064cf42eda@165.229.125.27:30304"
+### 13. Paring the Nodes(node1에 node2 enode 연결) : admin.addPeer("enode://d2facada76b143b2eda531fc0e08a104d71284f70ddc8c28cacade3d06516265f7f33874d67706d47e77ba2fec5e70eb9285abcea0303041cbe23f064cf42eda@165.229.125.27:30304")
+### 14. Paring the Nodes(node2에 node1 enode 연결) : admin.addPeer("enode://26c316e90df9254a5da1dc934df9e860c959c89f0176cfd2a88940eeceae5e6d0e3ebaec2ca67bb325aeb6133ecbf82dab3b0a2125da6662d86f3e894f76512e@165.229.125.27:30303")
+### 15. node 연결 확인 : admin.peers
+ 
+</div>
+</details>
  
  # 📌[Information Security & Web Hacking]
  <details>
