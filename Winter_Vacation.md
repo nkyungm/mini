@@ -492,7 +492,47 @@ print("Pay: ",computepay(hour_f,rate_f))
 ### 13. Paring the Nodes(node1에 node2 enode 연결) : admin.addPeer("enode://d2facada76b143b2eda531fc0e08a104d71284f70ddc8c28cacade3d06516265f7f33874d67706d47e77ba2fec5e70eb9285abcea0303041cbe23f064cf42eda@165.229.125.27:30304")
 ### 14. Paring the Nodes(node2에 node1 enode 연결) : admin.addPeer("enode://26c316e90df9254a5da1dc934df9e860c959c89f0176cfd2a88940eeceae5e6d0e3ebaec2ca67bb325aeb6133ecbf82dab3b0a2125da6662d86f3e894f76512e@165.229.125.27:30303")
 ### 15. node 연결 확인 : admin.peers
+
+## <port 번호 새로 생성해서 geth 들어감> -> 실패
+### 16. geth --networkid 2345 --datadir C:\Users\NGM\MyTestNet\node1 --port 9991 console 2>> C:\Users\NGM\MyTestNet\node1\geth.log
+### 17. geth --networkid 2345 --datadir C:\Users\NGM\MyTestNet\node2 --port 9992 console 2>> C:\Users\NGM\MyTestNet\node2\geth.log
+### 18. "enode://26c316e90df9254a5da1dc934df9e860c959c89f0176cfd2a88940eeceae5e6d0e3ebaec2ca67bb325aeb6133ecbf82dab3b0a2125da6662d86f3e894f76512e@165.229.125.27:9991", "enode://d2facada76b143b2eda531fc0e08a104d71284f70ddc8c28cacade3d06516265f7f33874d67706d47e77ba2fec5e70eb9285abcea0303041cbe23f064cf42eda@165.229.125.27:9992"
+
+## <노트북에 node3 생성>
+### 19. 1) 버전 달라서 조금 다르게 해줌
+{
+"config": {
+"chainId": 15,
+"homesteadBlock": 0,
+"eip150Block": 0,
+"eip155Block": 0,
+"eip158Block": 0
+},
+
+"nonce": "0x0000000000000042",
+"timestamp": "0x00",
+"parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+"extraData": "0x00",
+"gasLimit": "0x8000000",
+"difficulty": "0x4000",
+"mixhash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+"coinbase": "0x3333333333333333333333333333333333333333",
+"alloc": {}
+}
+### 20. 2) geth --datadir C:\Users\skaru\MyTestNet\data\node3 init C:\Users\skaru\MyTestNet\data\node3\genesis.json
+### 21. 3) geth --datadir C:\Users\skaru\MyTestNet\data\node3 --networkid 2345 console 2>console2.log (or) geth --datadir C:\Users\skaru\MyTestNet\data\node3 console --networkid 2345 --nodiscover --maxpeers 0(채굴 화면에 보임)
  
+![화면 캡처 2022-02-19 204840](https://user-images.githubusercontent.com/97418768/154805838-dac06afb-f70e-46b2-bb77-a6a8d8c12bd5.png)
+
+### 22. 4) miner.start(1)
+![화면 캡처 2022-02-19 204857](https://user-images.githubusercontent.com/97418768/154805849-8e956999-e178-48d8-92e6-e102463b8942.png)
+
+ 
+### 23. 5) eth.blockNumber, eth.getBalance(eth.coinbase), web3.fromWei(eth.getBalance(eth.coinbase),"ether")
+ ![화면 캡처 2022-02-19 204925](https://user-images.githubusercontent.com/97418768/154805854-b9a72ac8-5143-44a6-881c-a5d1fc1d4d35.png)
+
+### 24. "enode://26c316e90df9254a5da1dc934df9e860c959c89f0176cfd2a88940eeceae5e6d0e3ebaec2ca67bb325aeb6133ecbf82dab3b0a2125da6662d86f3e894f76512e@165.229.125.27:30303","enode://e63df132122045e5c13995fac3315db22cb8b0d4d173c6e4ca66c140576de13589b94caf32961ede60afa1c12e302ed952116aa12f474bfbbdd133245cef3497@127.0.0.1:30303"
+
 </div>
 </details>
  
