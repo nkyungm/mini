@@ -545,6 +545,74 @@ print("Pay: ",computepay(hour_f,rate_f))
 - 테스트 넷은 네트워크의 이더가 실질적인 금전적 가치 X  ->  이더리움 블록체인을 테스트 및 탐색 가능
 - 테스트(및 학습)를 마지막으로 완료한 경우에만 실제 구축을 위해 메인넷에 연결
 - 4개의 테스트넷(Ropsten, Kovan, Rinkeby, Goerli)
+ ### 3. 다운로드한 데이터 검사
+ - Geth가 ~.ethereum-testnet 디렉터리에서 생성한 폴더
+  - geth : 다운로드 중인 블록체인
+  - keystore : 로컬 이더리움 노드의 계정 세부 정보
+ ### 4. JavaScript 콘솔 가져오기
+ #### > geth --testnet --datadir ~/.ethereum-testnet console 2>console.log
+ #### > personal.newAccount()
+ #### Password: pass0
+ #### Repeat password: pass0
+- Geth 자바스크립트 콘솔 없이 별도의 창에서 Geth를 실행 + Geth와 상호 작용
+ #### > geth --testnet --datadir ~/.ethereum-testnet --rpc —rpcport 8545
+ - --rpc : HTTP_RPC 서버를 사용 가능으로 설정
+ - --rpcport 8545 : HTTP_RPC 서버가 포트 8545에서 수신하여 다른 클라이언트가 연결할 수 있도록 함
+ #### > geth attach http://127.0.0.1:8545
+ - 다른 터미널 창에서 geth로 url http://127.0.0.1:8545 붙임
+ ### 5. 동기화 모드
+ #### 1. 전체 노드 모드(빠른 동기화 포함)
+ - --syncmode 옵션을 지정하지 않고 Geth 클라이언트를 시작하면 Geth에서 사용하는 기본 모드(--syncmode fast)
+- 블록 헤더 다운로드 -> 블록 본문, 영수증 작성해 Geth가 전체 블록체인을 컴퓨터에 다운로드
+- 빠른 동기화가 이더리움 네트워크의 마지막 블록에 도달 -> 전체 동기화 모드로 전환, 최신 정보 확인
+ #### 2. 전체 노드 모드
+ - 제네시스 블록에서 시작 -> 모든 블록 확인 및 모든 트랜잭션 실행하는 전체 노드 동기화
+- 빠른 동기화 모드보다 느림, 보안 강화
+ #### 3. 라이트 노드 모드
+ - 헤더 체인만 다운로드, 네트워크에서 기타 모든 것을 on-demand 방식으로 요청
+- 블록 헤더에 있는 상태 루트에 대해 데이터의 유효성 확인
+- --syncmode 조명 옵션 사용
+ 
+ ## Creating Your Own Private Ethereum Test Network
+ ### 1. Genesis 블록, 노드 데이터 저장 폴더 생성
+ - 실제 블록체인에 연결X, 로컬 설정에서 자신만의 사설 테스트 네트워크 생성 가능 -> 쉬운 개발, 실제 이더리움 비용 지불하지 않고도 이더리움 블록체인 탐색 가능
+ ### 실습 : 단일 컴퓨터에 노드 1과 노드 2, 세번 째 노드 3으로 구성된 사설 테스트 네트워크를 다른 컴퓨터에 생성
+ ### 1. MyTestNet 폴더 생성
+ #### > cd ~
+#### > mkdir MyTestNet
+#### > cd MyTestNet
+ ### 2. Genesis 블록 생성
+ - Genensis 블록 : 첫 번째 블록이자 선행 블록을 가리키지 않는 유일한 블록인 블록체인의 시작
+ - genesis.json 파일 생성
+ 
+ {
+"config": {
+"chainId": 15,
+"homesteadBlock": 0,
+"eip150Block": 0,
+"eip155Block": 0,
+"eip158Block": 0
+},
+"nonce": "0x0000000000000042",
+"timestamp": "0x00",
+"parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+"extraData": "0x00",
+"gasLimit": "0x8000000",
+"difficulty": "0x4000",
+"mixhash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+"coinbase": "0x3333333333333333333333333333333333333333",
+"alloc": {}
+}
+ ### 3. 노드 데이터 저장 폴더 생성
+ #### > cd ~/MyTestNet
+#### > mkdir data
+ ### 4. 노드 초기화
+ - 테스트 네트워크에 노드를 생성하려면 이전에 생성한 Genesis 블록을 사용하여 노드 초기화 과정 필요
+ #### > geth --datadir ~/MyTestNet/data/node1 init ~/MyTestNet/genesisblock.json
+ #### > tree (node1, node2 구성)
+ ### 5. 노드 시작 - node 1
+ #### > geth --datadir ~/MyTestNet/data/node1 console 2>console1.log
+ - console 2 옵션은 기본적으로 출력을 파일로 다시 보냄 (console1.log) -> Geth가 지속적으로 많은 출력 생성 방지, Geth 자바스크립트 콘솔 사용 가능
  </div>
 </details>
  
