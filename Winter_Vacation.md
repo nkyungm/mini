@@ -613,6 +613,65 @@ print("Pay: ",computepay(hour_f,rate_f))
  ### 5. 노드 시작 - node 1
  #### > geth --datadir ~/MyTestNet/data/node1 console 2>console1.log
  - console 2 옵션은 기본적으로 출력을 파일로 다시 보냄 (console1.log) -> Geth가 지속적으로 많은 출력 생성 방지, Geth 자바스크립트 콘솔 사용 가능
+ ### 6. 계정 생성 및 잔액 확인
+ #### > personal.newAccount()
+ Passphrase: pass0
+ 
+Repeat passphrase: pass0
+ #### > eth.accounts
+ - 노드 계정 목록이 배열로 표시
+- 계정 생성 시, ~/MyTestNet/data/node1/keystore 디렉터리의 파일에 저장된 계정 세부 정보 있음
+ #### > eth.getBalance(eth.accounts[0])
+ -> 0
+ - 잔액에 대한 표시 단위 Wei
+- 1 Ether = 100000000000000Wei
+ - Wei의 잔액 -> Ether
+ #### > web3.fromWei(eth.getBalance(eth.accounts[0]), "ether")
+ -> 0
+ 
+ ![image](https://user-images.githubusercontent.com/97418768/155154404-f35fa232-5190-4f66-be76-b6469df73379.png)
+### 7. 다른 노드 시작 - node 2
+ #### > geth --datadir ~\MyTestNet\data\node2 -port 30304 --nodiscover --networkid 2345 --ipcdisable console 2>console2.log
+ - --port 30304 설정 : Geth는 기본적으로 30303 사용(node 1), 동일한 컴퓨터에서 실행되는 노드가 여러 개인 경우, 각 노드가 고유한 포트 번호 사용해야 함 -> 충돌 방지
+- --nodiscover : 피어가 서로를 자동으로 검색 X , 피어를 수동으로 추가해야 함
+- --networkid : 다른 노드가 동일한 네트워크 ID로 네트워크 연결 가능하도록 네트워크 ID 지정
+- --ipcdisable : port 접근 허용
+ ### - node 1 다시 시작
+ #### > geth --datadir ~\MyTestNet\data\node1 --networkid 2345 --ipcdisable console 2>console1.log
+ - -- networkid 2345 : 노드 2의 피어로 추가 가능
+ 
+ ![image](https://user-images.githubusercontent.com/97418768/155154585-1e26cb03-b0cf-47dc-9d94-31fa82c45c0c.png)
+### 8. 노드 정보 가져오기 (enode : 이더리움 네트워크의 노드를 URI의 형태로 설명)
+ #### > admin.nodeInfo (node 1)
+ #### > admin.nodeInfo (node 2)
+ ### 9. 노드 쌍 구성
+#### >admin.addPeer("enode://2e363f13e5cef58e1ed4b5106ad9328c3df74430e8cb9627ef8f67378dd4780f1190a7e0454fe9c18a0e493e92503229fb5fd8f18f27529c2f8d8e4afcc798f1@211.186.154.15:30303")
+ ### 12. 노드 간 이더넷 전송
+ #### > personal.newAccount()
+ Password: pass1
+ 
+Repeat password: pass1
+ - node 1에서 다른 계정 생성
+ #### > eth.accounts
+ #### > eth.getBalance(eth.accounts[0])
+ -> 470000000000000000000
+ #### > eth.getBalance(eth.accounts[1])
+ -> 0
+ #### > personal.unlockAccount(eth.accounts[0])
+ Password: pass0
+ - 한 계정에서 다른 계정으로 일부 Ether를 전송하기 전, 원본 계정 잠금 해제
+ #### > eth.sendTransaction({from: eth.accounts[0], to: eth.accounts[1], value: web3.toWei(5,"ether")})
+ - 첫 번째 계정의 Ether 5개를 동일한 노드 내의 두 번째 계정으로 이체
+ 
+ #### > miner.start()
+ -> null
+ -첫 번째 계정 마이닝(거래가 블록체인에 기록될 수 있도록 거래 확인)
+ #### > miner.stop()
+ -> null
+ -마이닝 종료
+ #### > eth.getBalance(eth.accounts[1])
+ -> 5000000000000000000
+ -두 번째 계정에 5개의 Ether 전송됨
  </div>
 </details>
  
