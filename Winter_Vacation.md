@@ -672,6 +672,9 @@ Repeat password: pass1
  #### > eth.getBalance(eth.accounts[1])
  -> 5000000000000000000
  -두 번째 계정에 5개의 Ether 전송됨
+ ### 12. 계정 관리 및 제거
+ #### > miner.start()
+ - UTC 파일 내용 분석
  </div>
 </details>
  
