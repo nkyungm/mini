@@ -675,6 +675,7 @@ Repeat password: pass1
  ### 12. 계정 관리 및 제거
  #### > miner.start()
  - UTC 파일 내용 분석
+ ### 13. 코인베이스 설정
  </div>
 </details>
  
