@@ -644,8 +644,19 @@ Repeat passphrase: pass0
 ### 8. 노드 정보 가져오기 (enode : 이더리움 네트워크의 노드를 URI의 형태로 설명)
  #### > admin.nodeInfo (node 1)
  #### > admin.nodeInfo (node 2)
- ### 9. 노드 쌍 구성
+ ### 9. 노드 쌍 구성( 동일 컴퓨터 노드 )
 #### >admin.addPeer("enode://2e363f13e5cef58e1ed4b5106ad9328c3df74430e8cb9627ef8f67378dd4780f1190a7e0454fe9c18a0e493e92503229fb5fd8f18f27529c2f8d8e4afcc798f1@211.186.154.15:30303")
+ -> true
+ - node 2에 node 1의 enode 키 값 입력
+ #### > admin.addPeer("enode://1922d09135e6b8f91221575cb0a9a6819d09d8ea56a13788419569abc0de410d94dd974ae7ebf00c9cde904ca9dc09aa5d07f8f774f02fdcffae48400c2fa65a@127.0.0.1:30304?discport=0")
+ -> true
+ - node 1에 node 2의 enode 키 값 입력
+ #### > admin.peers
+ - node 1에 Peer 추가
+ #### > admin.peers
+ - node 2 Peer 추가
+ 10. 노드 쌍 구성( 다른 컴퓨터 노드 )
+ 
  ### 12. 노드 간 이더넷 전송
  #### > personal.newAccount()
  Password: pass1
@@ -673,9 +684,37 @@ Repeat password: pass1
  -> 5000000000000000000
  -두 번째 계정에 5개의 Ether 전송됨
  ### 12. 계정 관리 및 제거
- #### > miner.start()
+ #### {
+"address":"acf28077eb41424c70c28c31222b821dde5f686b",
+"crypto":{
+"cipher":"aes-128-ctr",
+"ciphertext":"cb1cb85da255a3cc51444d6b16db17ecbd6095dd61fc5a96d501cb26210e76d7",
+"cipherparams":{
+"iv":"8e4cdab86e4a2a2592976ce269fd1ef8"
+},
+"kdf":"scrypt",
+"kdfparams":{
+"dklen":32,
+"n":262144,
+"p":1,
+"r":8,
+"salt":"ad792a4c9f00d10a721eafbff2c6eb17ab39125ad087776ca781d5650abb2d26"
+},
+"mac":"43668000a8966c501ec861b100040778bce56603b9819220630bc99f1c7c084c"
+},
+"id":"aab06707-604c-4f42-b7cb-18a34738667f",
+"version":3
+}
  - UTC 파일 내용 분석
  ### 13. 코인베이스 설정
+ #### > eth.coinbase
+ - 마이닝 보상이 가는 노드 내의 계정 반환
+ #### > miner.setEtherbase(eth.accounts[1])
+ -> true
+ - 코인베이스를 두 번째 계정으로 변경
+ #### > eth.coinbase
+ - 코인베이스가 두 번째 계정인지 확인
+ 
  </div>
 </details>
  
