@@ -655,7 +655,7 @@ Repeat passphrase: pass0
  - node 1에 Peer 추가
  #### > admin.peers
  - node 2 Peer 추가
- 10. 노드 쌍 구성( 다른 컴퓨터 노드 )
+ ### 10. 노드 쌍 구성( 다른 컴퓨터 노드 )
  ![image](https://user-images.githubusercontent.com/97418768/156004741-c7b9229a-85cd-404b-8ce7-04065317961d.png)
 
  ### 12. 노드 간 이더넷 전송
