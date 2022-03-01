@@ -644,13 +644,16 @@ Repeat passphrase: pass0
 ### 8. 노드 정보 가져오기 (enode : 이더리움 네트워크의 노드를 URI의 형태로 설명)
  #### > admin.nodeInfo (node 1)
  #### > admin.nodeInfo (node 2)
- ### 9. 노드 쌍 구성( 동일 컴퓨터 노드 )
-#### >admin.addPeer("enode://2e363f13e5cef58e1ed4b5106ad9328c3df74430e8cb9627ef8f67378dd4780f1190a7e0454fe9c18a0e493e92503229fb5fd8f18f27529c2f8d8e4afcc798f1@211.186.154.15:30303")
+ ### 9. 노드 쌍 구성( 동일 컴퓨터 노드 ) - admin.addPeer()
+#### > admin.addPeer("enode://2e363f13e5cef58e1ed4b5106ad9328c3df74430e8cb9627ef8f67378dd4780f1190a7e0454fe9c18a0e493e92503229fb5fd8f18f27529c2f8d8e4afcc798f1@211.186.154.15:30303")
  -> true
  - node 2에 node 1의 enode 키 값 입력
  #### > admin.addPeer("enode://1922d09135e6b8f91221575cb0a9a6819d09d8ea56a13788419569abc0de410d94dd974ae7ebf00c9cde904ca9dc09aa5d07f8f774f02fdcffae48400c2fa65a@127.0.0.1:30304?discport=0")
  -> true
  - node 1에 node 2의 enode 키 값 입력
+ ### 9. 노드 쌍 구성( 동일 컴퓨터 노드 ) - static-nodes.json
+ - node 2 디렉토리에서 static-nodes.json 파일 생성 및 node 1의 enode 키 값 입력
+ - node 1 디렉토리에서 static-nodes.json 파일 생성 및 node 2의 enode 키 값 입력
  #### > admin.peers
  - node 1에 Peer 추가
  #### > admin.peers
