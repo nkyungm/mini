@@ -659,12 +659,14 @@ Repeat passphrase: pass0
  #### > admin.peers
  - node 2 Peer 추가
  ### 10. 노드 쌍 구성( 다른 컴퓨터 노드 )
- ![image](https://user-images.githubusercontent.com/97418768/156004741-c7b9229a-85cd-404b-8ce7-04065317961d.png)
- #### > geth --datadir ~/MyTestNet/data/node1
+  #### > geth --datadir ~/MyTestNet/data/node1
  #### > admin.addPeer("enode://5732b1b7ecd3bfe15443bf42f55893402a734bedf08a2e2f90bc566acd4fa1fde1ca9e373a36ab07ba6826e678f159a1126429e683ed756ae244bc2c7626ba5d@165.229.125.57:30303")
  #### > admin.peers
  - node 1과 node 3 연결
 - (이 페이지 연구실 컴퓨터 node3이랑 연결 실패 -> 다시 다 지우고 새로 깔고 다시 실행해야 함)
+ 
+ ![image](https://user-images.githubusercontent.com/97418768/156004741-c7b9229a-85cd-404b-8ce7-04065317961d.png)
+
  ### 12. 노드 간 이더넷 전송
  #### > personal.newAccount()
  Password: pass1
