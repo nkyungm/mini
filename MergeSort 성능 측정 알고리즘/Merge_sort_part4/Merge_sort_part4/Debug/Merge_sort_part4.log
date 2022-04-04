@@ -1,0 +1,4 @@
+﻿  main.cpp
+D:\알고리즘\Merge_sort_part4\Merge_sort_part4\main.cpp(45,12): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\알고리즘\Merge_sort_part4\Merge_sort_part4\main.cpp(44,9): warning C4101: 'k' :참조되지 않은 지역 변수입니다.
+  Merge_sort_part4.vcxproj -> D:\알고리즘\Merge_sort_part4\Debug\Merge_sort_part4.exe
