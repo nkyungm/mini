@@ -1,5 +1,5 @@
 <font class="papago-parent"><font class="papago-source" style="display:none;"># 📌[PYTHON]
-</font># 📌[..피톤!]</font><font class="papago-parent"><font class="papago-source" style="display:none;">
+</font></font><font class="papago-parent"><font class="papago-source" style="display:none;">
 </font>
 </font><font class="papago-parent"><font class="papago-source" style="display:none;"><details>
 </font><<details>></font><font class="papago-parent"><font class="papago-source" style="display:none;">
