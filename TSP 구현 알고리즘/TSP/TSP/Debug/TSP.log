@@ -1,3 +1,0 @@
-﻿  main.cpp
-D:\알고리즘\TSP\TSP\main.cpp(7,9): warning C4101: 'j' :참조되지 않은 지역 변수입니다.
-  TSP.vcxproj -> D:\알고리즘\TSP\Debug\TSP.exe
