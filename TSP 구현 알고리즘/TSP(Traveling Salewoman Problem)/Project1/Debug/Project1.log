@@ -1,6 +1,6 @@
 ﻿  소스.cpp
-C:\Users\skaru\source\repos\Project1\Project1\소스.cpp(42,33): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\skaru\source\repos\Project1\Project1\소스.cpp(121,31): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\skaru\source\repos\Project1\Project1\소스.cpp(165,31): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\skaru\source\repos\Project1\Project1\소스.cpp(92,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  Project1.vcxproj -> C:\Users\skaru\source\repos\Project1\Debug\Project1.exe
+D:\알고리즘\TSP(Traveling Salewoman Problem)\Project1\소스.cpp(48,33): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\알고리즘\TSP(Traveling Salewoman Problem)\Project1\소스.cpp(128,31): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\알고리즘\TSP(Traveling Salewoman Problem)\Project1\소스.cpp(172,31): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\알고리즘\TSP(Traveling Salewoman Problem)\Project1\소스.cpp(98,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Project1.vcxproj -> D:\알고리즘\TSP(Traveling Salewoman Problem)\Debug\Project1.exe
