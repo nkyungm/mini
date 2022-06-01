@@ -1,0 +1,4 @@
+﻿  main.cpp
+D:\알고리즘\TSP_2\TSP_2\main.cpp(17,9): warning C4101: 'v' :참조되지 않은 지역 변수입니다.
+D:\알고리즘\TSP_2\TSP_2\main.cpp(17,6): warning C4101: 'u' :참조되지 않은 지역 변수입니다.
+  TSP_2.vcxproj -> D:\알고리즘\TSP_2\Debug\TSP_2.exe
